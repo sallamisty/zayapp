@@ -19,7 +19,6 @@ const PRICES = {
   yearly: { prime: 2388, lite: 1068, new: 2388 },
 }
 
-const planKeys = ['new', 'lite', 'prime'] as const
 
 const planIcons = {
   prime:<svg width="44" height="54" viewBox="0 0 44 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,17 +43,24 @@ const planBadges = {
 
 }
 
+const planKeys = ['prime', 'lite', 'new'] as const;
+
 const featureKeys = [
   '1', '2', '3', '4', '5', '6',
   '7', '8', '9', '10', '11', '12','13',
   '14','15', '16','17','18','19','20','21','22'
-] as const
+] as const;
 
-const planFeatures: Record<(typeof planKeys)[number], typeof featureKeys> = {
-  prime: featureKeys,
-  lite: featureKeys,
-  new: ['1', '3'],
-}
+// Define FeatureKey as a union of values
+type FeatureKey = typeof featureKeys[number];
+type PlanKey = typeof planKeys[number];
+
+// ✅ Allow arrays of any valid feature keys
+const planFeatures: Record<PlanKey, FeatureKey[]> = {
+  prime: [...featureKeys], // ✅ full list, converted to mutable
+  lite: [...featureKeys],
+  new: ['1', '3'], // ✅ partial subset is valid now
+};
 
 export default function PricingSection() {
   const t = useTranslations('pricing')

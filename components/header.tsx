@@ -13,14 +13,13 @@ interface HeaderProps {
 export const Header = ({ direction, currentPath }: HeaderProps) => {
   const t = useTranslations("navigation");
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const isRTL = direction === 'rtl';
 
   const navItems = [
     { label: t('home'), href: '#main' },
     { label: t('education'), href: '#education' },
-    { label: t('solutions'), href: '#' },
-    { label: t('marketplace'), href: '' },
+    { label: t('solutions'), href: '#solution' },
+    { label: t('marketplace'), href: '#faq' },
     { label: t('pricing'), href: '#pricing' },
   ];
 
@@ -69,6 +68,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   </button>
 
   {/* Create Store Button */}
+  <Link  href="https://forms.gle/wcqpYEr6FT2mshwv8" target='_blank'>
   <button className="bg-purple-900 hover:bg-purple-800 transition text-white text-sm font-medium px-5 py-3 rounded-full flex items-center gap-2">
     {t('createStore')}
     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,6 +77,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       <path d="M8.14246 12.5C8.48565 13.471 9.41171 14.1667 10.5002 14.1667C11.5887 14.1667 12.5148 13.471 12.858 12.5" stroke="#F18825" strokeWidth="1.5" strokeLinecap="round"/>
     </svg>
   </button>
+</Link>
 
 </div>
         
@@ -181,8 +182,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
               <path d="M2.25 16.5C2.67778 15.0249 3.56097 13.7228 4.7733 12.7799C5.98562 11.837 7.46501 11.3015 9 11.25C12.09 11.25 14.7225 13.4325 15.75 16.5" stroke="#4F1E6F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
-
-          <button className="bg-purple-900 hover:bg-purple-800 transition text-white text-sm font-medium px-5 py-3 rounded-full flex items-center gap-2 justify-center">
+<Link  href="https://forms.gle/wcqpYEr6FT2mshwv8" target='_blank'>
+          <button className="w-full bg-purple-900 hover:bg-purple-800 transition text-white text-sm font-medium px-5 py-3 rounded-full flex items-center gap-2 justify-center">
             {t('createStore')}
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.66191 10.0243C4.10955 7.78608 4.33336 6.66697 5.07292 5.94619C5.20961 5.81297 5.35749 5.69175 5.51492 5.58384C6.36674 5 7.50801 5 9.79054 5H11.2096C13.4922 5 14.6335 5 15.4853 5.58384C15.6427 5.69175 15.7905 5.81297 15.9273 5.94619C16.6668 6.66697 16.8906 7.78608 17.3383 10.0243C17.981 13.2376 18.3023 14.8443 17.5625 15.9827C17.4286 16.1889 17.2723 16.3796 17.0965 16.5513C16.1251 17.5 14.4866 17.5 11.2096 17.5H9.79054C6.51356 17.5 4.87507 17.5 3.90376 16.5513C3.72789 16.3796 3.57156 16.1889 3.43762 15.9827C2.69791 14.8443 3.01924 13.2376 3.66191 10.0243Z" stroke="#F18825" strokeWidth="1.5"/>
@@ -190,6 +191,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
               <path d="M8.14246 12.5C8.48565 13.471 9.41171 14.1667 10.5002 14.1667C11.5887 14.1667 12.5148 13.471 12.858 12.5" stroke="#F18825" strokeWidth="1.5" strokeLinecap="round"/>
             </svg>
           </button>
+  </Link>
         </div>
       </div>
     </div>

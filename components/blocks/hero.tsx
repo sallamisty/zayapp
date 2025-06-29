@@ -8,7 +8,7 @@ export default function FeaturesSectionMain() {
   const t = useTranslations('Featuresmain');
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12 space-y-6">
+    <section className="max-w-7xl mx-auto px-4 py-12 space-y-6" id="solution">
         <div className="text-center mb-10">
         <h2 className="text-3xl font-bold text-purple-900 dark:text-white">{t('title')}</h2>
         <p className="text-gray-600 dark:text-gray-300">{t('subtitle')}</p>

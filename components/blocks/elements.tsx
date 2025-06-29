@@ -7,22 +7,22 @@ const cards = [
   {
     titleKey: 'cards.guide.title',
     descKey: 'cards.guide.desc',
-    href: '/discover-now',
+    href: 'https://forms.gle/wcqpYEr6FT2mshwv8',
   },
   {
     titleKey: 'cards.blog.title',
     descKey: 'cards.blog.desc',
-    href: '/discover-now',
+    href: 'https://forms.gle/wcqpYEr6FT2mshwv8',
   },
   {
     titleKey: 'cards.community.title',
     descKey: 'cards.community.desc',
-    href: '/discover-now',
+    href: 'https://forms.gle/wcqpYEr6FT2mshwv8',
   },
   {
     titleKey: 'cards.help.title',
     descKey: 'cards.help.desc',
-    href: '/discover-now',
+    href: 'https://forms.gle/wcqpYEr6FT2mshwv8',
   },
 ]
 
@@ -69,12 +69,12 @@ export default function CardsSection() {
                 </p>
             </div>
             <div className="mt-6 flex justify-between items-center">
-            <Link href={card.href}>
+            <Link href={card.href} target='_blank'>
               <Button variant="ghost" className="text-purple-700 p-0 hover:text-purple-500 hover:bg-white-100">
                 {t('discoverNow')}
               </Button>
             </Link>
-                        <Link href={card.href}>
+                        <Link href={card.href} target='_blank'>
               <div className="bg-purple-700 text-white p-2 rounded-full">
                 <svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16.2917 16.2913L6.70837 6.70801M6.70837 6.70801V15.333M6.70837 6.70801H15.3334" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>

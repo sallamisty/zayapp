@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
+import {Link} from '@/i18n/routing';
 import {
   Check,
   X,
@@ -15,8 +16,8 @@ import { useTranslations } from 'next-intl'
 import clsx from 'clsx'
 
 const PRICES = {
-  monthly: { prime: 199, lite: 89, new: 199 },
-  yearly: { prime: 2388, lite: 1068, new: 2388 },
+  monthly: { prime: 199, lite: 89, new: 0 },
+  yearly: { prime: 2189, lite: 979, new: 0 },
 }
 
 
@@ -58,7 +59,9 @@ type PlanKey = typeof planKeys[number];
 // ✅ Allow arrays of any valid feature keys
 const planFeatures: Record<PlanKey, FeatureKey[]> = {
   prime: [...featureKeys], // ✅ full list, converted to mutable
-  lite: [...featureKeys],
+  lite: [  '1', '2', '3', '4', '5', '6',
+  '7', '8', '10', '11', '12','13',
+  '14','16','17','18','19'],
   new: ['1', '3'], // ✅ partial subset is valid now
 };
 
@@ -189,6 +192,7 @@ const [showAllFeatures, setShowAllFeatures] = useState(false)
 )}
 
               {/* Buy button */}
+                <Link  href="https://forms.gle/wcqpYEr6FT2mshwv8" target='_blank'>
               <Button className="rounded-full flex mx-auto gap-2 mt-4">{t('buy')} 
                             <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="40" height="40" rx="20" fill="white"/>
@@ -198,6 +202,7 @@ const [showAllFeatures, setShowAllFeatures] = useState(false)
 </svg>
 
 </Button>
+</Link>
             </div>
           )
         })}

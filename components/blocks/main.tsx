@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
+import {Link} from '@/i18n/routing';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
@@ -21,7 +22,8 @@ export default function HeroSection() {
 
         <p className="text-lg">{t('desc')}</p>
 
-                  <Button className="bg-primary text-white px-4 py-6 rounded-full gap-2">
+  <Link  href="https://forms.gle/wcqpYEr6FT2mshwv8" target='_blank'>
+                  <Button className="mt-2 bg-primary text-white px-4 py-6 rounded-full gap-2">
            {t('cta')}
 
             <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +34,7 @@ export default function HeroSection() {
 </svg>
 
           </Button>
-
+</Link>
         <div className="flex gap-6 mt-8 text-xl  font-bold justify-center md:justify-start">
           <div>
             <p>+1k</p>

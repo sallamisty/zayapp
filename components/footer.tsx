@@ -22,10 +22,10 @@ export const Footer = ({ direction }: HeaderProps) => {
           <h3 className="text-lg font-semibold text-purple-700 mb-2">{t('zaya')}</h3>
           <div className="h-1 w-10 rounded bg-purple-700 mb-4"></div>
           <ul className="space-y-2">
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/market">{t('digital_market')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/join-team">{t('join_team')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/terms">{t('terms')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/privacy">{t('privacy')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('digital_market')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('join_team')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('terms')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('privacy')}</Link></li>
           </ul>
         </div>
 
@@ -34,8 +34,8 @@ export const Footer = ({ direction }: HeaderProps) => {
           <h3 className="text-lg font-semibold text-purple-700 mb-2">{t('app_store')}</h3>
           <div className="h-1 w-10 rounded bg-purple-700 mb-4"></div>
           <ul className="space-y-2">
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/about-store">{t('what_is_store')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/browse-apps">{t('browse_apps')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('what_is_store')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('browse_apps')}</Link></li>
           </ul>
         </div>
 
@@ -44,10 +44,10 @@ export const Footer = ({ direction }: HeaderProps) => {
           <h3 className="text-lg font-semibold text-purple-700 mb-2">{t('support_services')}</h3>
           <div className="h-1 w-10 rounded bg-purple-700 mb-4"></div>
           <ul className="space-y-2">
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/help-center">{t('help_center')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/zaya-academy">{t('zaya_academy')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/whatsapp-community">{t('whatsapp_community')}</Link></li>
-            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/complaints">{t('complaints')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('help_center')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('zaya_academy')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('whatsapp_community')}</Link></li>
+            <li className='transition-colors duration-200 cursor-pointer hover:text-primary'><Link href="/">{t('complaints')}</Link></li>
           </ul>
         </div>
 
@@ -56,7 +56,7 @@ export const Footer = ({ direction }: HeaderProps) => {
           <h3 className="text-lg font-semibold text-purple-700 mb-2">{t('soon')}</h3>
           <div className="h-1 w-10 rounded bg-purple-700 mb-4"></div>
           <div className="space-y-4">
-            <a href="#" className="block w-fit">
+            <a href="https://zaya.digital" className="block w-fit">
               <Image
                 className='rounded-full hover:opacity-85'
                 src="/ap.webp"
@@ -65,7 +65,7 @@ export const Footer = ({ direction }: HeaderProps) => {
                 height={50}
               />
             </a>
-            <a href="#" className="block w-fit">
+            <a href="https://zaya.digital" className="block w-fit">
               <Image
                 className='rounded-full hover:opacity-85'
                 src="/gp.webp"

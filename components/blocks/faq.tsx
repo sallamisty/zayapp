@@ -18,7 +18,7 @@ export default function FaqSection() {
   ];
 
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto text-center">
+    <section className="py-16 px-4 max-w-6xl mx-auto text-center" id="faq">
       <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-2 dark:text-white">{t('title')}</h2>
       <p className=" mb-10">{t('subtitle')}</p>
 

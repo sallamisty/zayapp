@@ -2,7 +2,7 @@
 export default function WhatsApp() {
 return(
 <a
-  href="https://wa.me/966500000000" // replace with your number
+  href="https://wa.me/966537707887" // replace with your number
   target="_blank"
   rel="noopener noreferrer"
   className="w-12 h-12 fixed bottom-4 left-4 z-50 bg-gray-900 hover:bg-gray-800 text-white p-3 rounded-full shadow-lg transition transform hover:scale-105"

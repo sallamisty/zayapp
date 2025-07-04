@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link';
 
 export default function Banner() {
   const t = useTranslations("banner")
@@ -29,6 +30,7 @@ export default function Banner() {
           <p className="text text-gray-300">
             {t('nother')}
           </p>
+            <Link  href="https://forms.gle/wcqpYEr6FT2mshwv8" target='_blank'>
           <Button className="bg-orange-500 hover:bg-orange-500 text-white px-4 py-6 rounded-full gap-2">
             {t('create')}
 
@@ -40,6 +42,7 @@ export default function Banner() {
 </svg>
 
           </Button>
+          </Link>
         </div>
 
         {/* Image/Card Section */}
